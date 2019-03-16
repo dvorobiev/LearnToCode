@@ -5,5 +5,5 @@ int sum(a,b){
 }
 
 int main(){
-	printf("Sum=%d",sum(2,3));
+	printf("Sum=%d\n",sum(2,3));
 }

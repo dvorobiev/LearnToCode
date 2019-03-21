@@ -46,13 +46,13 @@ int main (){
     }    
 
     if (bmi<18.5){
-        printf("You are so long!\n");
+        printf("You BMI is is too low\n");
     }
     else if (bmi>up_limit){
-        printf("You are short!\n");
+        printf("You BMI is too high\n");
     }
     else{
-        printf("You absolutly normal\n");
+        printf("You BMI is absolutly normal\n");
     }
     return 0;
     

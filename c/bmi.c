@@ -54,5 +54,6 @@ int main (){
     else{
         printf("You absolutly normal\n");
     }
+    return 0;
     
 }

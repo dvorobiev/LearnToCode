@@ -12,16 +12,23 @@
 int bottle_count = 99;
 
 void couplet(int bottle_count){
-    printf("Bottle count is %i\n", bottle_count);
-    bottle_count-=1;
+    printf("%i bottles of beer on the wall, %i bottles of beer.\n", bottle_count, bottle_count);
+    printf("Take one down, pass it around,");
+    --bottle_count;
+    if (bottle_count>0){
+        printf(" %i bottles of beer on the wall...\n\n", bottle_count);
+    }
+    else{
+        printf(" no more bottles of beer on the wall...\n\n");
+    }
     if (bottle_count==0){
-        printf("THE END");
+        printf("No more bottles of beer on the wall, no more bottles of beer.\nWe've taken them down and passed them around; now we're drunk and passed out!");
     } else{
         couplet(bottle_count);
     }
 }
 
 int main(){
-    printf("Right now we print %i line of digit\n", bottle_count);
+    printf("===Right now we print POEM of \"99 bottles of beer on the wall\"===\n\n");
     couplet(bottle_count);
 }

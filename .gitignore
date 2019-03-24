@@ -3,3 +3,4 @@ c/sum
 .DS_Store
 c/bmi
 c/poem
+.vscode/*

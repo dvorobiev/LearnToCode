@@ -2,7 +2,7 @@ punct = "., ':"
 function is_palindrom(palindrome) {
     if (palindrome.length < 2) {
         console.log("True");
-        return 1;
+        return true;
     } else if (punct.indexOf(palindrome[0]) != -1) {
         is_palindrom(palindrome.substr(1, palindrome.length - 1));
     } else if (punct.indexOf(palindrome[palindrome.length - 1]) != -1) {
@@ -11,8 +11,7 @@ function is_palindrom(palindrome) {
         is_palindrom(palindrome.substr(1, palindrome.length - 2));
     } else {
         console.log("False");
-        return 2;
+        return false;
     }
 }
-
-console.log(is_palindrom("Madam, I'm Adam"));
+console.log(is_palindrom("Madam, I'm Adam"))

@@ -46,6 +46,6 @@ void couplet(int count){
     }
 }
 
-int main(){
+int main(void){
     couplet(count);
 }

@@ -22,7 +22,7 @@ function parentheses_validation(string) {
     if (string[0]!="(" && string[0]!=")"){
         parentheses_validation(string.substr(1,string.length-1))
     } else if (string[0]==')'){
-        if (first) {
+        if ((first) || (counter==0)) {
             console.log("no valid")
             return false; 
         }
@@ -36,8 +36,10 @@ function parentheses_validation(string) {
 }
 let counter = 0
 
+console.log(parentheses_validation('()))((()'))
 console.log(parentheses_validation('(2*2)%(5+7)'))
 
 console.log(parentheses_validation('()()'))
 console.log(parentheses_validation(')('))
 console.log(parentheses_validation('(()(()())'))
+

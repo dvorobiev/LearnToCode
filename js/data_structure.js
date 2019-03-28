@@ -1,5 +1,5 @@
 function growe(array){
-    for (index in array) {
+    for (index=0; index<array.length; index++) {
         array[index]*=2;
     }
     return 0;

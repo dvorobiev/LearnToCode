@@ -9,7 +9,6 @@ char *str_array[5] = {"one", "two", "three", "four", "five"};
 
 int print_dig_array(int elem[], int current, int last)
 {
-    //printf("current=%d, last=%d",current,last);
     if (current > (last - 1))
     {
         printf("\n");
@@ -23,7 +22,6 @@ int print_dig_array(int elem[], int current, int last)
 
 int print_str_array(char *elem[], int current, int last)
 {
-    //printf("current=%d, last=%d",current,last);
     if (current > (last - 1))
     {
         printf("\n");

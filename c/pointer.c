@@ -14,8 +14,6 @@ int reverse_comp(const void *a, const void *b){
     {
         return 0;
     }
-    
-    
 }
 
 void multiplication(int *x){
@@ -24,10 +22,8 @@ void multiplication(int *x){
 
 int main(){
     int x = 42;
-    int y = 12;
     printf("%d\n", x);
     multiplication(&x);
     printf("%d\n", x);
-    printf("%d\n",reverse_comp(&x,&y));
     qsort(&array,10,sizeof(int),&reverse_comp);
 }

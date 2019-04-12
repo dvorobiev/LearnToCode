@@ -17,7 +17,7 @@ int reverse_comp(const void *a, const void *b){
 }
 
 void multiplication(int *x){
-    *x = *x*2;
+    *x *= 2;
 }
 
 int main(){

@@ -4,7 +4,7 @@
 // 98 bottles of beer on the wall, 98 bottles of beer.
 // Take one down, pass it around, 97 bottles of beer on the wall...
 //
-// 97 bottles of beer on the wall, 97 bottles of beer.
+			// 97 bottles of beer on the wall, 97 bottles of beer.
 // Take one down, pass it around, 96 bottles of beer on the wall...
 // ...
 // 2 bottles of beer on the wall, 2 bottles of beer.
@@ -27,7 +27,7 @@ void couplet(int count){
         --count;
         if (count!=1){
             printf(" %i bottles of beer on the wall...\n\n", count);
-        }
+	        }
         else{
             printf(" %i bottle of beer on the wall...\n\n", count);
         }
